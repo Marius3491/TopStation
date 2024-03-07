@@ -17,4 +17,4 @@ You may also see any lint errors in the console.
 
 situado en el dictorio de proyecto, ejecutar:
 ### `json-server --watch users.json --port 3001 `
-### `json-server --watch gamess.json --port 3002 `
+### `json-server --watch games.json --port 3002 `
