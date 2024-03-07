@@ -8,13 +8,16 @@ const UserLoginCapture = () => {
         fetch('http://localhost:3001/users')
             .then(response => response.json())
             .then(data => {
-                data.users = undefined;
-                if (data && data.users && data.users.length > 0) {
-                    // Supongamos que estamos capturando el primer usuario de la lista
-                    const firstUser = data.users[0];
-                    setLoggedInUser(firstUser);
+                if (data && Array.isArray(data)) {
+                    const usersArray = data;
+                    if (usersArray.length > 0) {
+                        const firstUser = usersArray[0];
+                        setLoggedInUser(firstUser);
+                    } else {
+                        console.error('La respuesta del servidor no contiene usuarios.');
+                    }
                 } else {
-                    console.error('No se encontraron usuarios en la respuesta del servidor.');
+                    console.error('La respuesta del servidor no es un array de usuarios.');
                 }
                 setIsLoading(false);
             })
