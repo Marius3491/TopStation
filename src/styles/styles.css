@@ -1,0 +1,252 @@
+/* En src/styles/styles.css */
+
+/* Estilos de reseteo */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos de tipografía */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+/* Estilos de enlace */
+a {
+    color: #0070d1;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Transición suave para el color */
+}
+
+a:hover {
+    color: white;
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #0070d1;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3.5rem; /* Tamaño de la fuente aún más grande */
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+/* Estilos de navegación */
+nav {
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 30px; /* Mayor espacio entre elementos de navegación */
+}
+
+nav ul li a {
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 12px 20px; /* Mayor relleno */
+    border-radius: 8px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+}
+
+nav ul li a:hover {
+    background-color: #00549e;
+}
+
+/* Estilos de botón */
+button {
+    background-color: #0070d1;
+    color: #ffffff;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+}
+
+button:hover {
+    background-color: #00549e;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #0070d1;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+}
+/* En src/styles/styles.css */
+
+/* Estilos para el formulario de inicio de sesión y registro */
+.form-container {
+    max-width: 400px; /* Ancho máximo del contenedor del formulario */
+    margin: 0 auto; /* Centrar el formulario horizontalmente */
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container input {
+    margin-bottom: 10px; /* Espacio entre los inputs */
+    padding: 8px; /* Espaciado interno de los inputs */
+    border-radius: 5px; /* Borde redondeado */
+    border: 1px solid #ccc; /* Borde del input */
+    font-size: 16px; /* Tamaño de la fuente */
+}
+
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.form-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0070d1;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #00549e;
+}
+
+.form-container input[type="text"],
+.form-container input[type="password"],
+.form-container input[type="email"]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.cart-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+    padding: 8px;
+}
+
+button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.home-container {
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+.home-title {
+    margin-bottom: 20px; /* Añade un margen inferior al título */
+}
+
+.home-description {
+    font-style: italic; /* Opcional: añade estilo italic al texto de descripción */
+}
+
+/* Resposive Selectors*/
+/* Estilos para pantallas grandes */
+@media screen and (min-width: 768px) {
+    .form-container {
+        max-width: 600px;
+    }
+
+    .cart-container {
+        max-width: 1000px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    table {
+        margin-bottom: 30px;
+    }
+}
+
+/* Estilos para pantallas medianas */
+@media screen and (max-width: 767px) {
+    .form-container,
+    .cart-container {
+        max-width: 90%;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    table {
+        margin-bottom: 15px;
+    }
+}
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media screen and (max-width: 576px) {
+    .form-container,
+    .cart-container {
+        max-width: 100%;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    table {
+        margin-bottom: 10px;
+    }
+}

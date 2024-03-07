@@ -1,0 +1,31 @@
+{
+  "games": [
+    {
+      "id": 1,
+      "title": "The Last of Us Part II",
+      "genre": "Acción y aventura",
+      "price": 59.99,
+      "image": "https://upload.wikimedia.org/wikipedia/en/4/4f/TLOU_P2_Box_Art_2.png",
+      "description": "Secuela del aclamado juego de acción y supervivencia en un mundo postapocalíptico.",
+      "quantity": 10
+    },
+    {
+      "id": 2,
+      "title": "God of War",
+      "genre": "Acción y aventura",
+      "price": 49.99,
+      "image": "https://upload.wikimedia.org/wikipedia/en/a/a7/God_of_War_4_cover.jpg",
+      "description": "Una nueva aventura de Kratos en la mitología nórdica, donde lucha contra monstruos y dioses.",
+      "quantity": 10
+    },
+    {
+      "id": 3,
+      "title": "Spider-Man",
+      "genre": "Acción y aventura",
+      "price": 39.99,
+      "image": "https://upload.wikimedia.org/wikipedia/en/e/e1/Spider-Man_PS4_cover.jpg",
+      "description": "Sumérgete en el papel de Spider-Man y recorre la ciudad de Nueva York combatiendo el crimen.",
+      "quantity": 10
+    }
+  ]
+}
